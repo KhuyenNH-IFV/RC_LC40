@@ -1,0 +1,52 @@
+body {
+    font-family: $font-body;
+    color: $color-o;
+    font-size: 14px;
+}
+/* cssFadein */
+body {
+    animation: fadeIn 2s ease 0s 1 normal;
+}
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+/* /cssFadein */
+* {
+    box-sizing: border-box;
+}
+a {
+    transition-duration: 0.4s;
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    &:hover {
+        // color: $color-primary;
+        text-decoration: none;
+    }
+    &:focus {
+        // color: $color-primary;
+        text-decoration: none;
+    }
+}
+h1, h2, h3, h4, h5, h5, h6 {
+    // font-family: $font-heading;
+}
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+li, ol {
+    list-style: none;
+}
+button, input, a {
+    padding: 0;
+    border: 0;
+    &:focus {
+        outline: none;
+    }
+}
