@@ -1,6 +1,9 @@
 @charset "UTF-8";
+
 @import "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
 @import "http://fonts.googleapis.com/earlyaccess/notosansjapanese.css";
+
 .row_clear:after, .container:after, .titleRow:after, .listItems:after, .header:after, .header .headerIn:after, .footer:after, .section-home01:after, .section-home02:after {
   content: "";
   clear: both;
@@ -69,13 +72,14 @@ body {
 /* cssFadein */
 body {
   -webkit-animation: fadeIn 2s ease 0s 1 normal;
-  animation: fadeIn 2s ease 0s 1 normal;
+          animation: fadeIn 2s ease 0s 1 normal;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -85,6 +89,7 @@ body {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -93,13 +98,13 @@ body {
 /* /cssFadein */
 * {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 a {
   -webkit-transition-duration: 0.4s;
-  -o-transition-duration: 0.4s;
-  transition-duration: 0.4s;
+       -o-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   color: inherit;
   text-decoration: none;
   -webkit-tap-highlight-color: transparent;
@@ -156,7 +161,6 @@ button:focus, input:focus, a:focus {
 /*------------------- Video popup*/
 #cboxOverlay {
   background: #000;
-  opacity: 1 !important;
 }
 
 #cboxLoadedContent {
@@ -275,10 +279,10 @@ button:focus, input:focus, a:focus {
 }
 
 .header.top-page .nav-main li.highlight a {
-  background: #ffffff;
-  color: #000;
+  background: #FF0000;
+  color: #ffffff;
   -webkit-box-shadow: none;
-  box-shadow: none;
+          box-shadow: none;
   border: 1px solid transparent;
 }
 
@@ -327,10 +331,10 @@ button:focus, input:focus, a:focus {
   -webkit-transition: 0.3s linear;
   -o-transition: 0.3s linear;
   transition: 0.3s linear;
-  background: #ffffff;
+  background: #FF0000;
   -webkit-transform: scaleX(0.8);
-  -ms-transform: scaleX(0.8);
-  transform: scaleX(0.8);
+      -ms-transform: scaleX(0.8);
+          transform: scaleX(0.8);
 }
 
 .nav-main li a {
@@ -345,10 +349,10 @@ button:focus, input:focus, a:focus {
   -webkit-transition: 0.3s linear;
   -o-transition: 0.3s linear;
   transition: 0.3s linear;
-  background: #ffffff;
+  background: #FF0000;
   -webkit-transform: scaleX(0.8);
-  -ms-transform: scaleX(0.8);
-  transform: scaleX(0.8);
+      -ms-transform: scaleX(0.8);
+          transform: scaleX(0.8);
 }
 
 .nav-main li a:after {
@@ -357,9 +361,9 @@ button:focus, input:focus, a:focus {
   top: 0px;
   width: 100%;
   -webkit-transform: scaleX(0.2);
-  -ms-transform: scaleX(0.2);
-  transform: scaleX(0.2);
-  height: 3px;
+      -ms-transform: scaleX(0.2);
+          transform: scaleX(0.2);
+  height: 2px;
   left: 0;
 }
 
@@ -376,7 +380,7 @@ button:focus, input:focus, a:focus {
   padding: 8px 15px;
   color: #000;
   -webkit-box-shadow: 0 0 25px #0065AF;
-  box-shadow: 0 0 25px #0065AF;
+          box-shadow: 0 0 25px #0065AF;
   border: 1px solid #0065AF;
   background: #ffffff;
   color: #2991b3;
@@ -455,13 +459,11 @@ button:focus, input:focus, a:focus {
   background-size: cover;
   min-height: 979px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -677,8 +679,26 @@ button:focus, input:focus, a:focus {
         section-home07
 ======================================*/
 .section-home07 {
-  background: #e3e5eb url("../images/img_home07.jpg") left bottom no-repeat fixed;
+  background: #e3e5eb url("../images/img_home07_blur.jpg") left bottom no-repeat fixed;
   min-height: 900px;
+  position: relative;
+}
+
+.section-home07 .blurred-img07 {
+  background: url("../images/img_home07.jpg") no-repeat fixed;
+  background-position: 75% 100%;
+  background-size: 130%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section-home07 .container {
+  position: relative;
+  z-index: 9;
 }
 
 .section-home07 .titleRow {
@@ -719,17 +739,14 @@ button:focus, input:focus, a:focus {
 }
 
 .section-home08 .listItems {
-  -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .section-home08 .items {
@@ -803,9 +820,11 @@ button:focus, input:focus, a:focus {
   .header .logo {
     width: 26%;
   }
+
   .nav-main {
     width: 72%;
   }
+
   .nav-main li.highlight {
     margin-left: 15px;
   }
@@ -823,9 +842,11 @@ button:focus, input:focus, a:focus {
   .is_pc {
     display: none;
   }
+
   .is_sp {
     display: inherit;
   }
+
   .container {
     padding-left: 7.14286% !important;
     padding-right: 7.14286% !important;
@@ -833,39 +854,33 @@ button:focus, input:focus, a:focus {
   /*------------------- Swap div*/
   .swapTwo {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -webkit-flex-direction: column;
     -ms-flex-direction: column;
-    flex-direction: column;
+        flex-direction: column;
     /* optional */
     -webkit-box-align: start;
-    -moz-box-align: start;
     -ms-flex-align: start;
-    -webkit-align-items: flex-start;
     align-items: flex-start;
   }
+
   .swapTwo .first_div {
     -webkit-box-ordinal-group: 2;
-    -moz-box-ordinal-group: 2;
-    -webkit-order: 2;
     -ms-flex-order: 2;
-    order: 2;
+        order: 2;
   }
+
   .swapTwo .second_div {
     -webkit-box-ordinal-group: 1;
-    -moz-box-ordinal-group: 1;
-    -webkit-order: 1;
     -ms-flex-order: 1;
-    order: 1;
+        order: 1;
   }
   /*------------------- Typography_SP -------------------*/
   .titleRow {
     display: block;
   }
+
   .number {
     text-align: center;
     padding-bottom: 35px;
@@ -873,30 +888,37 @@ button:focus, input:focus, a:focus {
     padding-top: 80px;
     padding-bottom: 50px;
   }
+
   .number img {
     width: 50px;
   }
+
   .titleText {
     display: block;
     padding-left: 0;
   }
+
   .titleText h2 {
     font-size: 22.5px;
     line-height: 1.5em;
   }
+
   .titleText h5 {
     font-size: 17px;
   }
+
   .title_h2 {
     font-size: 22.5px !important;
     padding-bottom: 25px !important;
     line-height: 1.5em !important;
   }
+
   .title_h3 {
     line-height: 1.5em !important;
     padding-bottom: 25px !important;
     font-size: 1.375em !important;
   }
+
   .textDes {
     text-align: justify;
     line-height: 1.75em;
@@ -907,10 +929,12 @@ button:focus, input:focus, a:focus {
   .header .container {
     padding-bottom: 0;
   }
+
   .headerSp {
     background: #ffffff;
     padding: 31px 24px;
   }
+
   .headerSp:after {
     content: "";
     clear: both;
@@ -918,19 +942,23 @@ button:focus, input:focus, a:focus {
     display: block;
     height: 0;
   }
+
   .headerSp .logoSP {
     float: left;
     width: 40%;
     min-width: 180px;
   }
+
   .headerSp .toggle-sp {
     float: right;
   }
+
   .headerSp .toggle-sp .btnToggle {
     cursor: pointer;
     width: 30px;
     height: 35px;
   }
+
   .headerSp .toggle-sp .btnToggle span {
     -webkit-transition: all 0.4s;
     -o-transition: all 0.4s;
@@ -941,19 +969,23 @@ button:focus, input:focus, a:focus {
     background: #000;
     display: block;
   }
+
   .headerSp .toggle-sp .btnToggle.active span:nth-of-type(1) {
     -webkit-transform: translateY(10px) rotate(-45deg);
-    -ms-transform: translateY(10px) rotate(-45deg);
-    transform: translateY(10px) rotate(-45deg);
+        -ms-transform: translateY(10px) rotate(-45deg);
+            transform: translateY(10px) rotate(-45deg);
   }
+
   .headerSp .toggle-sp .btnToggle.active span:nth-of-type(2) {
     opacity: 0;
   }
+
   .headerSp .toggle-sp .btnToggle.active span:nth-of-type(3) {
     -webkit-transform: translateY(-10px) rotate(45deg);
-    -ms-transform: translateY(-10px) rotate(45deg);
-    transform: translateY(-10px) rotate(45deg);
+        -ms-transform: translateY(-10px) rotate(45deg);
+            transform: translateY(-10px) rotate(45deg);
   }
+
   .headerSp .nav-sp {
     position: absolute;
     background: #ffffff;
@@ -964,26 +996,31 @@ button:focus, input:focus, a:focus {
     padding-top: 20px;
     display: none;
   }
+
   .headerSp .nav-sp li {
     display: block;
     width: 100%;
     padding: 16px 16px 16px 0;
   }
+
   .headerSp .nav-sp li:not(:last-child) {
     border-bottom: 1px solid #ddd;
   }
+
   .headerSp .nav-sp li.active {
     border-bottom: 1px solid #33445b;
   }
   /*--------------------------- section-home01 ---------------------------*/
   .section-home01 {
-    background-position: 22% 45px;
+    background-position: 10%;
     min-height: 600px;
   }
+
   .section-home01 .captionSlider {
     top: 40px;
     right: 20px;
   }
+
   .section-home01 .btnScroll {
     top: 500px;
   }
@@ -991,21 +1028,24 @@ button:focus, input:focus, a:focus {
   .section-home02 {
     background: url("../images/img_home02_sp_blur.jpg") center no-repeat;
     -webkit-box-align: end;
-    -webkit-align-items: flex-end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+        -ms-flex-align: end;
+            align-items: flex-end;
     padding-bottom: 80px;
   }
+
   .section-home02 .blurred-img {
     background: url("../images/img_home02_sp.jpg") center no-repeat;
   }
+
   .section-home02 .content .title_h2 {
     text-align: left;
     padding-bottom: 30px;
   }
+
   .section-home02 .content .description:not(:first-child) {
     padding-top: 0;
   }
+
   .section-home02 .content .btnModal {
     padding-top: 25px;
     text-align: center;
@@ -1014,13 +1054,16 @@ button:focus, input:focus, a:focus {
   .section-home03 {
     padding-top: 60px;
   }
+
   .section-home03:before {
     height: 1182px;
   }
+
   .section-home03 .avatarSection {
     padding-top: 60px;
     padding-bottom: 0;
   }
+
   .section-home03 .avatarSection .note-img {
     background: url("../images/note-01_sp.png") center no-repeat;
     top: 222px;
@@ -1028,12 +1071,14 @@ button:focus, input:focus, a:focus {
     width: 98px;
     height: 255px;
   }
+
   .section-home03 .avatarSection .description-avatar {
     position: relative;
     top: 0;
     right: 0;
     padding-bottom: 60px;
   }
+
   .section-home03 .avatarSection .description-avatar li {
     line-height: 1.75em;
     font-size: 0.875em;
@@ -1051,11 +1096,13 @@ button:focus, input:focus, a:focus {
   .section-home06 .titleRow {
     padding: 0 0 20px;
   }
+
   .section-home06 .img-home06 {
     background: none;
     margin-top: 50px;
     height: 350px;
   }
+
   .section-home06 .blurred-img06 {
     background-size: 100%;
     background-position: top;
@@ -1065,8 +1112,9 @@ button:focus, input:focus, a:focus {
     background-position: 75% 100%;
     min-height: 780px;
     background-size: 130%;
-    background-attachment: scroll;
+    background-attachment: fixed;
   }
+
   .section-home07 .titleRow {
     top: -30px;
     margin-top: 0;
@@ -1075,32 +1123,38 @@ button:focus, input:focus, a:focus {
   .section-home08 {
     padding: 25px 0 75px;
   }
+
   .section-home08 .title_h2 {
     font-size: 22.5px;
     line-height: 1.5em;
     padding-bottom: 25px;
   }
+
   .section-home08 .listItems {
     -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
+
   .section-home08 .items {
     width: 50%;
     padding-bottom: 42px;
   }
+
   .section-home08 .items:nth-last-of-type(-n+2) {
     padding-top: 0;
   }
+
   .section-home08 .items:nth-child(even) {
     padding-right: 0;
     padding-left: 8px;
   }
+
   .section-home08 .items:nth-child(odd) {
     padding-right: 8px;
     padding-left: 0;
   }
+
   .section-home08 .items .description {
     line-height: 1.4;
   }
@@ -1109,6 +1163,7 @@ button:focus, input:focus, a:focus {
     padding-top: 0;
     height: inherit;
   }
+
   .footer .copyright {
     font-size: 12px;
     padding: 18px 0;

@@ -210,7 +210,8 @@
     }
     /*--------------------------- section-home01 ---------------------------*/
     .section-home01 {
-        background-position: 22% 45px;
+        // background-position: 22% 45px;
+        background-position: 10%;
         min-height: 600px;
         .captionSlider {
             top: 40px;
@@ -306,7 +307,7 @@
         background-position: 75% 100%;
         min-height: 780px;
         background-size: 130%;
-        background-attachment: scroll;
+        background-attachment: fixed;
         .titleRow {
             top: -30px;
             margin-top: 0;

@@ -23,19 +23,6 @@ $(document).ready(function() {
         }, 'fast');
     });
     try {
-        // Blur background
-        var indexBlur = $('.section-home02').offset().top;
-        var indexBlur2 = $('.section-home06').offset().top;
-        $(window).scroll(function() {
-            let s = $(window).scrollTop();
-            let opacityVal = (s / indexBlur);
-            $('.blurred-img').css('opacity', opacityVal);
-
-            let s2 = $(window).scrollTop();
-            let opacityVal2 = (s2 / indexBlur2);
-            $('.blurred-img06').css('opacity', opacityVal2);
-        });
-
         // link scroll
         $('a[href^="#"]').click(function() {
             let the_id = $(this).attr("href");
@@ -119,6 +106,25 @@ $(document).ready(function() {
     var widthBr = $(window).width();
     // Fixed header
     if (widthBr <= 768) {
+        try {
+            var indexBlur = $('.section-home02').offset().top;
+            var indexBlur2 = $('.section-home06').offset().top;
+            var indexBlur3 = $('.section-home07').offset().top;
+            $(window).scroll(function() {
+                let s = $(window).scrollTop();
+                let opacityVal = (s / indexBlur);
+                $('.blurred-img').css('opacity', opacityVal);
+
+                let s2 = $(window).scrollTop();
+                let opacityVal2 = (s2 / indexBlur2);
+                $('.blurred-img06').css('opacity', opacityVal2);
+
+                let s3 = $(window).scrollTop();
+                let opacityVal3 = (s3 / indexBlur3);
+                $('.blurred-img07').css('opacity', opacityVal3);
+            });
+        } catch (e) {}
+
         // Auto resize height items
         var matchHeight = function() {
             function init() {
@@ -147,7 +153,23 @@ $(document).ready(function() {
             };
         }();
         matchHeight.init();
-    } else {}
+    } else {
+        // Blur background
+        try {
+            $('#section-home02').crossfade({
+                threshold: 0.3,
+                backgroundPosition: 'center center'
+            });
+            $('#img-home06').crossfade({
+                threshold: 0.3,
+                backgroundPosition: 'center center'
+            });
+            $('#section-home07').crossfade({
+                threshold: 0.3,
+                backgroundPosition: 'left bottom'
+            });
+        } catch (e) {}
+    }
 
     // Fade scroll
     $(window).scroll(function() {

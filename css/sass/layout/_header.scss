@@ -15,8 +15,8 @@
                 color: $color-o;
                 &.highlight {
                     a {
-                        background: $color-a;
-                        color: $color-o;
+                        background: #FF0000;
+                        color: $color-a;
                         box-shadow: none;
                         border: 1px solid transparent;
                     }
@@ -64,7 +64,7 @@
                     top: inherit;
                     bottom: 0px;
                     transition: 0.3s linear;
-                    background: $color-a;
+                    background: #FF0000;
                     transform: scaleX(0.8);
                 }
             }
@@ -78,7 +78,7 @@
                     top: inherit;
                     bottom: 0px;
                     transition: 0.3s linear;
-                    background: $color-a;
+                    background: #FF0000;
                     // width: 100%;
                     transform: scaleX(0.8);
                 }
@@ -89,7 +89,7 @@
                 top: 0px;
                 width: 100%;
                 transform: scaleX(0.2);
-                height: 3px;
+                height: 2px;
                 left: 0;
             }
         }
