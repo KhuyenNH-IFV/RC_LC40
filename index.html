@@ -9,6 +9,7 @@
         <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
         <link rel="stylesheet" type="text/css" href="css/colorbox.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+
     </head>
     <body>
         <div class="wrapper">
@@ -68,18 +69,31 @@
             <!-- /header -->
             <div class="main-body">
                 <section class="section-home01">
+                    <div class="btnScroll animated fadeInDown">
+                        <a href="#section-home02"><img src="images/btn-scroll.png" alt=""></a>
+                    </div>
                     <div class="container">
                         <div class="captionSlider">
                             <img src="images/title-home01.png" alt="">
                         </div>
-                        <div class="btnScroll">
-                            <a href="#section-home02"><img src="images/btn-scroll.png" alt=""></a>
-                        </div>
                     </div>
                 </section>
                 <!-- /section-home01 -->
+
                 <section class="section-home02" id="section-home02" data-crossfade-start="images/img_home02_blur.jpg" data-crossfade-end="images/img_home02.jpg">
+                    <div class="firefly" id="fireflyId"></div>
+
+					<div class="hoverArea">
+						<p class="hovTx01"><a href=""><img src="images/txt_hoverpoint01.png" alt="データインテグリティ" onmouseover="this.src='images/txt_hoverpoint01_on.png'" onmouseout="this.src='images/txt_hoverpoint01.png'"></a></p>
+						<p class="hovTx02"><a href=""><img src="images/txt_hoverpoint02.png" alt="移動相残量モニター" onmouseover="this.src='images/txt_hoverpoint02_on.png'" onmouseout="this.src='images/txt_hoverpoint02.png'"></a></p>
+						<p class="hovTx03"><a href=""><img src="images/txt_hoverpoint03.png" alt="マルチプレックス" onmouseover="this.src='images/txt_hoverpoint03_on.png'" onmouseout="this.src='images/txt_hoverpoint03.png'"></a></p>
+						<p class="hovTx04"><a href=""><img src="images/txt_hoverpoint04.png" alt="PCレスラボ" onmouseover="this.src='images/txt_hoverpoint04_on.png'" onmouseout="this.src='images/txt_hoverpoint04.png'"></a></p>
+						<p class="hovTx05"><a href=""><img src="images/txt_hoverpoint05.png" alt="省スペース" onmouseover="this.src='images/txt_hoverpoint05_on.png'" onmouseout="this.src='images/txt_hoverpoint05.png'"></a></p>
+						<p class="hovTx06"><a href=""><img src="images/txt_hoverpoint06.png" alt="自己診断・自己回復" onmouseover="this.src='images/txt_hoverpoint06_on.png'" onmouseout="this.src='images/txt_hoverpoint06.png'"></a></p>
+					</div>
+
                     <div class="blurred-img"></div>
+
                     <div class="container">
                         <div class="content">
                             <h2 class="title_h2"><img src="images/title-home02.png" alt=""></h2>
@@ -87,35 +101,15 @@
                                 研究開発や品質管理など様々な用途で分析者のパートナ ーとして寄り添い、ニーズに応えて進化を続けてきたHPLC。 定評ある島津HPLCテクノロジーが結集して新たに誕生した 40 seriesは、一歩先に立って分析者をリードして、分析業務に新しい体験をもたらします。</p>
                             <p class="description textDes">分析時間の短縮などこれまでの課題の解決だけでなく、装置自身が監視してトラブルを未然に防ぐなど、分析者の装置マネージメントを支え、安定した分析を実現するという体 験型New HPLCです。</p>
 
-                            <div class="btnModal">
+                            <!--<div class="btnModal">
                                 <a class="video-popup" href="http://www.an.shimadzu.co.jp/sites/default/files/ckeditor/gcms/tq8040/size.mp4">動画を見る
-									<!--<img src="images/modal_01.jpg">-->
                                     <i class="fa fa-angle-right"></i>
                                 </a>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
                 </section>
-                <!-- /section-home02 -->
-                <section class="section-home03">
-                    <div class="container">
-                        <h2 class="title_h2"><img src="images/title-home03.png" alt=""></h2>
-                        <div class="avatarSection">
-                            <div class="description-avatar">
-                                <h3>システムコントローラー</h3>
-                                <ul>
-                                    <li>タッチパネル上で移動相残量の再設定、パージ、<br>ベースラインチェックなど分析準備を支援</li>
-                                    <li>スマートデバイスを用いた遠隔モニタリング</li>
-                                    <li>装置の状態やクロマトグラムを確認</li>
-                                </ul>
-                            </div>
-                            <div class="image-center fadeTop">
-                                <img src="images/img_home03.png" alt="">
-                            </div>
-                            <div class="note-img"></div>
-                        </div>
-                    </div>
-                </section>
+
                 <!-- /section-home03 -->
                 <section class="section-home04">
                     <div class="container">
@@ -130,7 +124,7 @@
                             <p class="textDes">移動相の枯渇を防ぐために、予め現在の残量から分析可能な本数を予測して 分析開始前にユーザーに知らせます。複数分析時もそれぞれの分析に必要な 移動相を、分析に必要な量だけ、人に寄らず正確に自動調製できます。</p>
                         </div>
                         <!-- slider -->
-                        <ul class="center-slider slider">
+                        <ul class="center-slider slider fadeTop">
                             <li>
                                 <img src="images/img_home04.jpg" alt="">
                             </li>
@@ -165,7 +159,7 @@
                         <div class="titleRow">
                             <div class="number"><img src="images/title_number03.png" alt=""></div>
                             <div class="titleText">
-                                <h5>デュアルインジェクション、<br class="is_mb">マルチプレックス</h5>
+                                <h5>デュアルインジェクション、<!--<br class="is_mb">-->マルチプレックス</h5>
                                 <h2>省スペースと<br class="is_pc">多角的解析の両立</h2>
                             </div>
                         </div>
@@ -178,7 +172,8 @@
                     </div>
                 </section>
                 <!-- /section-home06 -->
-                <section class="section-home07" id="section-home07" data-crossfade-start="images/img_home07_blur.jpg" data-crossfade-end="images/img_home07.jpg">
+                <!--<section class="section-home07" id="section-home07" data-crossfade-start="images/img_home07_blur.jpg" data-crossfade-end="images/img_home07.jpg">-->
+				<section class="section-home07" id="section-home07">
                     <div class="blurred-img07"></div>
                     <div class="container">
                         <div class="titleRow">
@@ -191,13 +186,85 @@
                         <div class="textRow">
                             <p class="textDes">装置の稼働時間や部品の交換履歴をIoTを用いて自動収集し、最適な交換のタイミングを事前にお知らせしトラブルを未然に防ぎます。装置の稼働率を高い状態で維持でき、ラボの運用コスト、スペースの最適化を図れます。</p>
 							<div class="btnModal">
-								<a class="video-popup" href="http://www.an.shimadzu.co.jp/sites/default/files/ckeditor/gcms/tq8040/size.mp4">
+								<a class="video-popup" href="http://www.rocoz.cc/video/size.mp4">
 									<img src="images/modal_01.jpg" alt="">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </section>
+				<!-- /section-home02 -->
+                <section class="section-home03">
+                    <div class="container">
+                        <h2 class="title_h2"><img src="images/title-home03.png" alt=""></h2>
+                        <div class="avatarSection">
+                            <div class="note-items">
+                                <div class="description-avatar">
+                                    <h3>システムコントローラー</h3>
+                                    <ul>
+                                        <li>タッチパネル上で移動相残量の再設定、パージ、<br>ベースラインチェックなど分析準備を支援</li>
+                                        <li>スマートデバイスを用いた遠隔モニタリング</li>
+                                        <li>装置の状態やクロマトグラムを確認</li>
+                                    </ul>
+                                </div>
+                                <div class="note-img"></div>
+                            </div>
+                            <div class="note-items">
+                                <div class="description-avatar">
+                                    <h3>送液ユニット</h3>
+                                    <ul>
+                                        <li>多次元LCシステムの構築を容易にする<br>独立した最大4つの送液系（LPGE×4）</li>
+                                        <li>長寿命部品による送液の長期安定性</li>
+                                        <li>新設計のデュアル送液システム<br>（1システム分）</li>
+										<li>コアシェルカラムを用いた高速分析<br>（最大圧力70MPa）</li>
+                                    </ul>
+                                </div>
+                                <div class="note-img"></div>
+                            </div>
+                            <div class="note-items">
+                                <div class="description-avatar">
+                                    <h3>オートサンプラ</h3>
+                                    <ul>
+                                        <li>微量注入量の再現性と“極”ゼロキャリーオーバー</li>
+                                        <li>内部標準添加、自動希釈、誘導体化反応など<br>自動試料調製による再現性の向上（自動前処理機能）</li>
+                                        <li>標準でMTP3枚まで収納可能なコンパクトボディ<br>（1.5ｍL バイアル）</li>
+										<li>最大44のMTPプレートをノンストップ分析<br>（プレートチェンジャ3枚まで連結可能）</li>
+                                    </ul>
+                                </div>
+                                <div class="note-img"></div>
+                            </div>
+							<div class="note-items">
+                                <div class="description-avatar">
+                                    <h3>カラムオーブン</h3>
+                                    <ul>
+                                        <li>最大の6本カラム使用履歴（注入回数、圧力など）の管理が可能</li>
+                                        <li>容易なカラム脱着とピークの低拡散を両立</li>
+                                        <li>複数流路を支えるマルチオーブン機能（最大4台）</li>
+										<li>移動相温度を高効率に昇温するアクティブプレヒーター</li>
+                                    </ul>
+                                </div>
+                                <div class="note-img"></div>
+                            </div>
+                            <div class="note-items">
+                                <div class="description-avatar">
+                                    <h3>吸光度検出器／フォトダイオード検出器</h3>
+                                    <ul>
+                                        <li>40%減のノイズ、ドリフト（現行機との比較）</li>
+                                        <li>3重温調（ランプ、光学系、フローセル）による<br>ベースライン安定性の強化</li>
+                                        <li>化合物の分解抑制による定量性確保<br>（PDA：UVカットフィルター内蔵）</li>
+										<li>データ毎に使用したフローセルID、ランプIDを記録</li>
+                                    </ul>
+                                </div>
+                                <div class="note-img"></div>
+                            </div>
+                            <div class="fadeTop">
+                                <img src="images/img_home03.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
                 <!-- /section-home07 -->
                 <div class="section-home08">
                     <div class="container">
@@ -243,10 +310,19 @@
                                     <p>吸光度検出器 / フォトダイオード検出器</p>
                                 </div>
                             </li>
+							<li class="items">
+                                <div class="avatar">
+                                    <a href=""><img src="images/img_home08_06.jpg" alt=""></a>
+                                </div>
+                                <div class="description">
+                                    <p>拡張モジュール</p>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
                 <!-- /section-home08 -->
+
             </div>
             <!-- /main-body -->
             <footer class="footer">
@@ -259,8 +335,8 @@
         <!-- Local popup video -->
         <div class="wrapVideo is_hidden">
             <div id='inline_content'>
-                <video id="videoplayer" width="640" height="480" controls autoplay>
-                <source src="http://www.an.shimadzu.co.jp/sites/default/files/ckeditor/gcms/tq8040/size.mp4" type="video/mp4">
+                <video id="videoplayer" controls autoplay>
+                <source src="size.mp4" type="video/mp4">
                 <!--<source src="sample.ogg" type="video/ogg">
                 <source src="sample.webm" type="video/webm">-->
                 <p>ご利用のブラウザはvideo タグによる動画の再生に対応していません。</p>
@@ -279,14 +355,37 @@
         <script type="text/javascript" src="js/slick.min.js"></script>
         <script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
         <script type="text/javascript" src="js/crossfade.jquery.js"></script>
+        <!-- <script type="text/javascript" src="js/jquery.firefly-0.6.min.js"></script> -->
+        <script type="text/javascript" src="js/jquery.warpdrive.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
 		<script>
 			$(document).ready(function(){
-			$(".inline").colorbox({inline:true});
-			$("#click").click(function(){
-			$('#click').css({"background-color":"#000", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
-			return false;
-			});
+    			$(".inline").colorbox({inline:true, width:"86%", maxWidth:"86%", maxHeight:"86%"});
+    			$("#click").click(function(){
+        			$('#click').css({"background-color":"#000", "color":"#fff", "cursor":"inherit"}).text("Open this window again and this message will still be here.");
+        			return false;
+    			});
+                // Setting background effect
+
+                // $.firefly({
+                //     color: '#fff',
+                //     minPixel: 1,
+                //     maxPixel: 3,
+                //     total: 65,
+                //     on: '.firefly',
+                //     borderRadius: 50
+                // });
+                var warpdrive = new WarpDrive(document.getElementById('fireflyId'));
+                var width_sh02 = $('.section-home02').width();
+                var height_sh02 = $('.section-home02').height();
+                $('#fireflyId canvas').attr('width', width_sh02);
+                $('#fireflyId canvas').attr('height', height_sh02);
+
+                $('#fireflyId canvas').css({
+                    'background-color': 'transparent',
+                    'color': 'rgb(255, 255, 255)',
+                    'opacity':' 0.2'
+                })
 			});
 		</script>
     </body>

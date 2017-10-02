@@ -5,6 +5,27 @@ $(document).ready(function() {
     var navSpClone = $(cloneNav).find('.highlight').removeClass('highlight');
     $('.nav-sp').append(cloneNav);
 
+    setInterval(function () {
+        $('.captionSlider').addClass('op1');
+    }, 1000);
+
+    var heightBr = $(window).height();
+    var headerSp = $('.headerSp').innerHeight();
+    $('.section-home01').css("min-height", heightBr - headerSp);
+
+
+    // fade list note
+    var note = $('.note-items');
+    var noteIndex = -1;
+    function showNextNote() {
+       ++noteIndex;
+       note.eq(noteIndex % note.length)
+           .fadeIn(1000)
+           .delay(1000)
+           .fadeOut(400, showNextNote);
+    }
+    showNextNote();
+
     // Toggle nav mobile
     $('.btnToggle').click(function(event) {
         $(this).toggleClass('active');

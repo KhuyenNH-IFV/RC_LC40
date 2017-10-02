@@ -259,8 +259,6 @@ button:focus, input:focus, a:focus {
 }
 
 .animated {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   -webkit-animation-fill-mode: both;
@@ -327,13 +325,13 @@ button:focus, input:focus, a:focus {
 
 @-webkit-keyframes fadeNote {
   50% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
 @keyframes fadeNote {
   50% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -528,6 +526,9 @@ button:focus, input:focus, a:focus {
   -webkit-transition-duration: 500ms;
        -o-transition-duration: 500ms;
           transition-duration: 500ms;
+  -webkit-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s;
   opacity: 1;
 }
 
@@ -700,49 +701,27 @@ button:focus, input:focus, a:focus {
 }
 
 .section-home03 .note-items {
-  display: none;
   z-index: 99;
   position: relative;
 }
 
 .section-home03 .note-items:nth-child(1) {
-  top: -135px;
-  left: -200px;
-  right: 0;
+  -webkit-animation: fadeNote 6s infinite 500ms;
+          animation: fadeNote 6s infinite 500ms;
 }
 
 .section-home03 .note-items:nth-child(2) {
-  top: 150px;
-  left: -22%;
-}
-
-.section-home03 .note-items:nth-child(2) .description-avatar {
-  top: 170px;
-  right: -24px;
+  -webkit-animation: fadeNote 6s infinite 2000ms;
+          animation: fadeNote 6s infinite 2000ms;
+  top: 220px;
+  right: 0%;
 }
 
 .section-home03 .note-items:nth-child(3) {
-  top: 310px;
-  left: -22%;
-}
-
-.section-home03 .note-items:nth-child(3) .description-avatar {
-  top: 170px;
-  right: -124px;
-}
-
-.section-home03 .note-items:nth-child(4) {
-  top: 340px;
-  left: -10%;
-}
-
-.section-home03 .note-items:nth-child(4) .description-avatar {
-  right: -20%;
-}
-
-.section-home03 .note-items:nth-child(5) {
-  top: 530px;
-  left: -24%;
+  -webkit-animation: fadeNote 6s infinite 4000ms;
+          animation: fadeNote 6s infinite 4000ms;
+  top: 570px;
+  right: 0%;
 }
 
 .section-home03 .avatarSection {
@@ -887,8 +866,7 @@ button:focus, input:focus, a:focus {
 ======================================*/
 .section-home07 {
   background: #e3e5eb url("../images/img_home07_blur.jpg") left bottom no-repeat fixed;
-  min-height: 940px;
-  padding-top: 120px;
+  min-height: 900px;
   position: relative;
 }
 
@@ -1020,52 +998,6 @@ button:focus, input:focus, a:focus {
   padding-top: 100px;
 }
 
-/* ShortContents */
-.shortContent {
-  width: 100%;
-  background: #E3E5EB;
-  position: relative;
-}
-
-.shortContent .short4 {
-  display: inline-block;
-  width: 100%;
-}
-
-.shortContent .short4 .shotC41 {
-  width: 50%;
-}
-
-.shortContent .short4 .shotC41 img {
-  float: right;
-}
-
-.shortContent .short4 .shotC42 {
-  width: 50%;
-}
-
-.shortContent .short4 .shotC42 img {
-  float: left;
-}
-
-.shortContent .short4 .shotC43 {
-  display: inline-block;
-  width: 50%;
-}
-
-.shortContent .short4 .shotC43 img {
-  float: right;
-}
-
-.shortContent .short4 .shotC44 {
-  display: inline-block;
-  width: 50%;
-}
-
-.shortContent .short4 .shotC44 img {
-  float: left;
-}
-
 /*-----------------------
         Responsive for device < 1200px
 -----------------------------------------*/
@@ -1085,6 +1017,7 @@ button:focus, input:focus, a:focus {
 
   .section-home02 .hoverArea {
     color: #fff;
+    width: 645px;
   }
 
   .section-home02 .hoverArea .hovTx01 {
@@ -1229,10 +1162,6 @@ button:focus, input:focus, a:focus {
     line-height: 1.75em;
     font-size: 15px !important;
     padding-bottom: 1em;
-  }
-
-  .firefly {
-    display: none;
   }
   /*--------------------------- header ---------------------------*/
   .header .container {
@@ -1393,7 +1322,7 @@ button:focus, input:focus, a:focus {
   }
 
   .section-home03:before {
-    height: 1182px;
+    height: 1000px;
   }
 
   .section-home03 .avatarSection {
@@ -1428,44 +1357,27 @@ button:focus, input:focus, a:focus {
 
   .section-home03 .note-items:nth-child(1) {
     top: 40px;
-    left: inherit;
   }
 
   .section-home03 .note-items:nth-child(2) {
-    top: 250px;
+    top: 350px;
     right: 0%;
     color: #ffffff;
   }
 
   .section-home03 .note-items:nth-child(2) .description-avatar {
-    position: absolute;
-    right: 10px;
-    top: -50px;
     padding-bottom: 10px;
   }
 
   .section-home03 .note-items:nth-child(3) {
     color: #ffffff;
     top: inherit;
-    bottom: 450px;
+    bottom: 250px;
     right: 0%;
   }
 
   .section-home03 .note-items:nth-child(3) .description-avatar {
-    top: 0;
     padding-bottom: 10px;
-  }
-
-  .section-home03 .note-items:nth-child(4) {
-    left: 0;
-  }
-
-  .section-home03 .note-items:nth-child(4) .description-avatar {
-    right: 0;
-  }
-
-  .section-home03 .note-items:nth-child(5) {
-    left: 0;
   }
   /*--------------------------- section-home04 ---------------------------*/
   .section-home04 .titleRow {

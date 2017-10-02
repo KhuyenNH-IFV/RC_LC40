@@ -53,8 +53,8 @@
 }
 .nav-main {
     padding: 18px 0 0 12%;
-    width: 50%;
-    float: right;
+    position:absolute;
+    right:110px;
     li {
         float: left;
         color: $color-a;

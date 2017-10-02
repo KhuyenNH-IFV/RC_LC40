@@ -68,20 +68,13 @@
 }
 .fadeTop {
     opacity: 0;
-    -webkit-transform: translate(0px, 100px);
-    -ms-transform: translate(0px, 100px);
-    transform: translate(0px, 100px);
-    -webkit-transition: all 0.6s;
-    -o-transition: all 0.6s;
+    transform: translate(0px, 50px);
     transition: all 0.6s;
 }
 .fadeTop.ef-slide {
     opacity: 1;
-    -webkit-transform: translate(0px, 0px);
-    -ms-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
 }
-
 // Typography
 /*------------------- Typography -------------------*/
 .titleRow {
@@ -179,4 +172,44 @@ textarea {
     // .items {
     //     float: left;
     // }
+}
+.animated {
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+.animated.hinge {
+    animation-duration: 2s;
+}
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+.fadeIn {
+    animation-name: fadeIn;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeNote {
+    50% {
+        opacity: 1;
+    }
 }

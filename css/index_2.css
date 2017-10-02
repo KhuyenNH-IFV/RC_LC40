@@ -528,6 +528,9 @@ button:focus, input:focus, a:focus {
   -webkit-transition-duration: 500ms;
        -o-transition-duration: 500ms;
           transition-duration: 500ms;
+  -webkit-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s;
   opacity: 1;
 }
 
@@ -700,49 +703,27 @@ button:focus, input:focus, a:focus {
 }
 
 .section-home03 .note-items {
-  display: none;
   z-index: 99;
   position: relative;
 }
 
 .section-home03 .note-items:nth-child(1) {
-  top: -135px;
-  left: -200px;
-  right: 0;
+  -webkit-animation: fadeNote 6s infinite 500ms;
+          animation: fadeNote 6s infinite 500ms;
 }
 
 .section-home03 .note-items:nth-child(2) {
-  top: 150px;
-  left: -22%;
-}
-
-.section-home03 .note-items:nth-child(2) .description-avatar {
-  top: 170px;
-  right: -24px;
+  -webkit-animation: fadeNote 6s infinite 2000ms;
+          animation: fadeNote 6s infinite 2000ms;
+  top: 220px;
+  right: 0%;
 }
 
 .section-home03 .note-items:nth-child(3) {
-  top: 310px;
-  left: -22%;
-}
-
-.section-home03 .note-items:nth-child(3) .description-avatar {
-  top: 170px;
-  right: -124px;
-}
-
-.section-home03 .note-items:nth-child(4) {
-  top: 340px;
-  left: -10%;
-}
-
-.section-home03 .note-items:nth-child(4) .description-avatar {
-  right: -20%;
-}
-
-.section-home03 .note-items:nth-child(5) {
-  top: 530px;
-  left: -24%;
+  -webkit-animation: fadeNote 6s infinite 4000ms;
+          animation: fadeNote 6s infinite 4000ms;
+  top: 570px;
+  right: 0%;
 }
 
 .section-home03 .avatarSection {
@@ -887,8 +868,7 @@ button:focus, input:focus, a:focus {
 ======================================*/
 .section-home07 {
   background: #e3e5eb url("../images/img_home07_blur.jpg") left bottom no-repeat fixed;
-  min-height: 940px;
-  padding-top: 120px;
+  min-height: 900px;
   position: relative;
 }
 

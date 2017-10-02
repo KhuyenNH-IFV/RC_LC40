@@ -31,3 +31,42 @@
 .pd_top_100 {
     padding-top: 100px;
 }
+
+
+
+/* ShortContents */
+.shortContent{
+	width:100%;
+	background:#E3E5EB;
+	position:relative;
+}
+.shortContent .short4{
+	display:inline-block;
+	width:100%;
+}
+.shortContent .short4 .shotC41{
+	width:50%;
+}
+.shortContent .short4 .shotC41 img{
+	float:right;
+}
+.shortContent .short4 .shotC42{
+	width:50%;
+}
+.shortContent .short4 .shotC42 img{
+	float:left;
+}
+.shortContent .short4 .shotC43{
+	display:inline-block;
+	width:50%;
+}
+.shortContent .short4 .shotC43 img{
+	float:right;
+}
+.shortContent .short4 .shotC44{
+	display:inline-block;
+	width:50%;
+}
+.shortContent .short4 .shotC44 img{
+	float:left;
+}
